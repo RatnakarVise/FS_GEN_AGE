@@ -1,0 +1,66 @@
+=== GUIDELINES ===
+1. Document Header Overview
+Title: Document Overview
+For the introductory section (Title, Author, Version, Date, etc.):
+Functional Explanation: Relevance of the header fields for business traceability and stakeholder alignment.
+
+2. Business Requirement Section
+Title: Business Requirement
+For each statement or paragraph:
+Functional Explanation:
+Describe what business problem or need is being addressed.
+Clarify expected outcomes, pain points, and business motivation behind the requirement.
+
+3. Functional Requirement Section
+Title: Functional Requirements
+For each bullet point or numbered item:
+Functional Explanation:
+Explain the business logic or rule this requirement enforces.
+Describe which users or departments are impacted and the value delivered.
+
+4. Screen/Layout/Field Requirements (if applicable)
+Title: Screen or Field Requirements
+For each field mentioned (input/output/display/hidden):
+Functional Explanation:
+Business meaning of the field, who uses it, and why.
+Dependency or relationship to other fields or values.
+
+5. Validation & Error Handling
+Title: Validation and Error Messages
+For each rule:
+Functional Explanation:
+What is the business intent of the validation.
+Impact of failing the check; what the user should do to correct it.
+
+6. Data Mapping / Interface Requirements (if mentioned)
+Title: Data Mapping or Interfaces
+For each field or mapping rule:
+Functional Explanation:
+Why the field needs to be transferred or transformed.
+Business rules driving the mapping logic.
+
+7. Security & Authorization
+Title: Security & Authorization
+For each access control requirement:
+Functional Explanation:
+Who should have access and why.
+Risk if improper access is granted.
+
+8. Dependencies & Assumptions
+Title: Dependencies and Assumptions
+For each listed item:
+Functional Explanation:
+Business or process dependencies that must exist for the solution to function correctly.
+
+
+9. Attachments or References
+Title: Attachments & Linked Objects
+Explain any referenced screenshots, transaction flows, Excel files, BRS, or process diagrams.
+Technical Explanation: Systems, formats, usage in development.
+Functional Explanation: What the attachment clarifies or complements from a business point of view.
+
+=== NOTES ===
+Every section and line must include both technical and functional perspectives.
+Avoid assuming unstated functionality – infer based on document content.
+Maintain structured formatting, section titles, and consistent style.
+Use formal tone suitable for inclusion in Technical Specification or Solution Design documents.
