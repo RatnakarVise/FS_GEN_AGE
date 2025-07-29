@@ -33,7 +33,7 @@ def add_paragraph(doc, text):
 def add_code_block(doc, code_lines):
     para = doc.add_paragraph()
     run = para.add_run("\n".join(code_lines))
-    run.font.name = "Courier New"
+    # run.font.name = "Courier New"
     run.font.size = Pt(10)
 
 def add_markdown_table(doc, lines):

@@ -8,5 +8,3 @@ langchain-core
 langchain-openai
 langchain-community
 langchain-chroma
-langchain-groq
-huggingface-hub
