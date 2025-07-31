@@ -7,7 +7,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
 from langchain_core.messages import SystemMessage, HumanMessage
-from fs_explanation import extract_fs_explanation
+# from fs_explanation import extract_fs_explanation
 
 # Load environment variables
 load_dotenv()
@@ -29,23 +29,23 @@ vectorstore = Chroma.from_documents(docs, embedding)
 retriever = vectorstore.as_retriever()
 
 # ✅ Step 3: Generate formatted Technical + Functional Description
-def generate_description_from_explanation(explanation: str) -> str:
-    prompt = [
-        SystemMessage(content="You are a senior SAP documentation specialist. From the explanation below, create:\n"
-                              "- A clear Technical Description (100–150 words)\n"
-                              "- A clear Functional Description (100–150 words)\n"
-                              "Ensure MS Word-compatible formatting."),
-        HumanMessage(content=explanation)
-    ]
-    llm = ChatOpenAI(model="gpt-4.1", temperature=0)
-    response = llm.invoke(prompt)
-    return response.content if hasattr(response, "content") else str(response)
+# def generate_description_from_explanation(explanation: str) -> str:
+#     prompt = [
+#         SystemMessage(content="You are a senior SAP documentation specialist. From the explanation below, create:\n"
+#                               "- A clear Technical Description (100–150 words)\n"
+#                               "- A clear Functional Description (100–150 words)\n"
+#                               "Ensure MS Word-compatible formatting."),
+#         HumanMessage(content=explanation)
+#     ]
+#     llm = ChatOpenAI(model="gpt-4.1", temperature=0)
+#     response = llm.invoke(prompt)
+#     return response.content if hasattr(response, "content") else str(response)
 
 
 # ✅ Step 4: Final FSD generator
 def generate_fs_from_requirement(requirement: str) -> str:
-    explanation = extract_fs_explanation(requirement)
-    formatted_description = generate_description_from_explanation(explanation)
+    # explanation = extract_fs_explanation(requirement)
+    # formatted_description = generate_description_from_explanation(explanation)
 
     retrieved_docs = retriever.get_relevant_documents(requirement)
     retrieved_context = "\n\n".join([doc.page_content for doc in retrieved_docs])
@@ -58,15 +58,15 @@ def generate_fs_from_requirement(requirement: str) -> str:
         "generate a complete and professionally formatted Functional Specification Document (min 3000 words). "
         "RAG Context:\n{context}\n\n"
         "ABAP Code:\n{requirement}\n\n"
-        "Explanation:\n{explanation}\n\n"
-        "Formatted Technical + Functional Description:\n{description}"
+        # "Explanation:\n{explanation}\n\n"
+        # "Formatted Technical + Functional Description:\n{description}"
     )
 
     formatted_prompt = prompt_template.format(
         context=retrieved_context,
         requirement=requirement,
-        explanation=explanation,
-        description=formatted_description,
+        # explanation=explanation,
+        # description=formatted_description,
     )
     llm = ChatOpenAI(model="gpt-4.1", temperature=0)
     response = llm.invoke(formatted_prompt)

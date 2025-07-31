@@ -7,21 +7,21 @@ Formatting should be MS Word (.docx) compatible.
 Titles should be Bold and in UPPERCASE.
 Use Blue color for all Titles and Headers.
 Provide proper numbering and sub-numbering for each section (e.g., 1., 1.1, etc.).
-FSD should be minimum 2000 words. (This is a must)
+FSD should be minimum 3000 words. (This is a must)
 Add Index on the first page based on the headings in the document (Mandatory).
 On the second page, create a MS Word-compatible table with the following details (Mandatory):
-Title
-Functional Consultant Name
-Project Name
-Business Analyst Name
-Client Name
-Manager Name
-Date
+    Title 
+    Functional Consultant Name
+    Project Name
+    Business Analyst Name
+    Client Name
+    Manager Name
+    Date
 Start all the main content sections from Page 3 onwards. This must be followed Strictly (Mandatory).
 All sections from 1 to 12 below are Mandatory. If no data is available, just display the headings—do not skip any section.
-1. TITLE
+1. TITLE in MS Word compatible Table Format
 Functional Specification for ABAP Development
-Mention the SAP Module and Process Area (e.g., SD – Sales Order Processing)
+Mention the SAP Module and Process Area in MS Word compatible Table Format (e.g., SD – Sales Order Processing)
 2. BUSINESS REQUIREMENT
 Describe the current business scenario or problem that requires addressing.
 Provide at least 100 words explaining the business context and background.
@@ -29,7 +29,7 @@ Provide at least 100 words explaining the business context and background.
     - Selection Screen Elements
     - Data fetch logic - what all and from where the data needs to be fetched
         Specify master data and transactional data required for this solution.
-        Only mention SAP database tables (standard or custom).
+        Only mention SAP database tables in MS Word compatible Table Format (standard or custom).
         Do not include forms, subroutines, or function modules.
     - Output Logic - Format of the output
 4. Technical Considerations
@@ -39,35 +39,35 @@ Provide at least 100 words explaining the business context and background.
     - Month-end Snapshot
 5. Error Handling
 6. Current PROCESS
-Explain the current process used in SAP or manually outside the system.
-Describe the steps involved, stakeholders, existing challenges, and limitations.
+    Explain the current process used in SAP or manually outside the system.
+    Describe the steps involved, stakeholders, existing challenges, and limitations.
 7. New PROCESS
-Describe the new business process that will result from this development.
-Include system changes, enhanced user experience, or automation improvements.
+    Describe the new business process that will result from this development.
+    Include system changes, enhanced user experience, or automation improvements.
 8. GAP ANALYSIS
-Provide a comparative summary between the AS-IS and TO-BE processes.
-List the functional gaps and proposed resolutions.
-Use bullet points or MS Word table format.
+    Provide a comparative summary between the AS-IS and TO-BE processes.
+    List the functional gaps and proposed resolutions.
+    Use bullet points in MS Word compatible Table Format.
 9. DETAILED FUNCTIONAL REQUIREMENTS
-Clearly define the required functionality in detail.
-Include field names, screen changes, business rules, and validations.
-Mention conditions, workflows, and exceptions.
-Use MS Word-compatible tables with headings and spacing.
+    Clearly define the required functionality in detail.
+    Include field names, screen changes, business rules, and validations.
+    Mention conditions, workflows, and exceptions.
+    Use MS Word-compatible tables with headings and spacing.
 10. IMPACTED SAP OBJECTS / TRANSACTIONS
-List the SAP standard or custom objects that will be affected.
-Include impacted transaction codes, reports, enhancements, or user exits.
-11. TEST SCENARIOS & ACCEPTANCE CRITERIA
-Provide detailed functional and boundary test scenarios.
-Include expected output, input data, and test steps.
-Mention what will qualify the solution for business acceptance.
+    List the SAP standard or custom objects that will be affected in MS Word compatible Table Format
+    Include impacted transaction codes, reports, enhancements, or user exits in MS Word compatible Table Format.
+11. TEST SCENARIOS & ACCEPTANCE CRITERIA in MS Word compatible Table Format
+    Provide detailed functional and boundary test scenarios.
+    Include expected output, input data, and test steps.
+    Mention what will qualify the solution for business acceptance.
 12. SECURITY & AUTHORIZATION REQUIREMENTS
-Specify if any new roles or authorizations are required.
-Include standard SAP authorization objects or PFCG roles.
-13. APPENDIX / ATTACHMENTS (IF ANY)
-Add screenshots, mock layouts, sample documents, or external specs.
-Ensure all attachments are MS Word or image compatible.
-Input Required to Generate the FSD:
-ABAP Program or Requirement Overview
+    Specify if any new roles or authorizations are required.
+    Include standard SAP authorization objects or PFCG roles.
+13. APPENDIX / ATTACHMENTS (IF ANY) in MS Word compatible Table Format
+    Add screenshots, mock layouts, sample documents, or external specs.
+    Ensure all attachments are MS Word or image compatible.
+    Input Required to Generate the FSD:
+    ABAP Program or Requirement Overview
 Module/Process Area
 Functional Requirement Description
 Business Requirement Explanation
